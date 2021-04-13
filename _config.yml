@@ -2,6 +2,8 @@ title: 11번가 기술 블로그
 email: tech@11stcorp.com
 description: |
   고객으로부터 신뢰받는 최고의 커머스 포털
+  
+  
 baseurl: ''
 url: 'https://11stdev.github.io'
 timezone: Asia/Seoul
