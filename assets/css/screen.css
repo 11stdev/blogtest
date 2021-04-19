@@ -32,25 +32,36 @@ kbd {
 }
 
 code.highlighter-rouge {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(27,31,35,0.05);
-  border-radius: 3px;
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
 }
 
-b, strong, optgroup {
+b,
+strong,
+optgroup {
     font-weight: 400;
 }
 
-a, a:link, a:visited, a:active, a:hover {
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
     color: #505050;
     text-decoration: none;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
     color: #1e1e1e;
 }
 
@@ -69,7 +80,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .sr-only {
     position: absolute;
     top: -9999px;
-    left: -9999px
+    left: -9999px;
 }
 
 .pull-left {
@@ -125,7 +136,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     zoom: 1;
 }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
     content: " ";
     display: table;
 }
@@ -208,7 +220,7 @@ for small screen(<720px):
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: right;
+    text-align: center;
 }
 
 #menu > li {
@@ -238,7 +250,6 @@ for small screen(<720px):
 #menu > li:hover > a {
     color: #1e1e1e;
 }
-
 #search {
     position: absolute;
     z-index: 99;
@@ -279,11 +290,13 @@ for small screen(<720px):
     transition: 0.2s ease;
     position: absolute;
     width: 550px;
-    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 2px;
     border: 0;
-    z-index: 999; top: 45px; right: 0px;
+    z-index: 999;
+    top: 45px;
+    right: 0px;
     line-height: 22px;
 }
 .search__results.is-hidden {
@@ -349,11 +362,13 @@ for small screen(<720px):
     text-align: right;
 }
 
-#footer-menu, #copyright {
+#footer-menu,
+#copyright {
     text-align: left;
 }
 
-#footer-menu > *, #links > * {
+#footer-menu > *,
+#links > * {
     list-style: none;
     display: inline;
 }
@@ -418,7 +433,8 @@ for small screen(<720px):
     z-index: 2;
 }
 
-#cover h1, #cover p {
+#cover h1,
+#cover p {
     width: 80%; /* @@iolo */
     max-width: 780px;
     margin: 0 auto;
@@ -517,7 +533,6 @@ for small screen(<720px):
 #shares > li.talk {
     display: none;
 }
-
 
 #share-facebook {
     background: url(../images/pc/share_face.png) no-repeat;
@@ -666,7 +681,8 @@ a.tag:hover {
     margin-left: 10px;
 }
 
-#pagination > li.active, #pagination > li:hover {
+#pagination > li.active,
+#pagination > li:hover {
     background-color: #e6e6e6;
     border-radius: 4px;
 }
@@ -675,7 +691,7 @@ a.tag:hover {
     color: #1e1e1e;
     width: 100%;
     height: 100%;
-    display:block;
+    display: block;
 }
 
 #page-prev {
@@ -903,7 +919,7 @@ body.tag-template #navbar {
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 #post-content hr {
@@ -912,7 +928,7 @@ body.tag-template #navbar {
     border: 0;
     border-top: 1px solid #d4d4d4;
     margin: 3.2em 0;
-    padding: 0
+    padding: 0;
 }
 
 #post-content figure img {
@@ -1107,13 +1123,11 @@ body.author-template #cover p {
 /* tag */
 
 body.tag-template {
-
 }
 
 /* page */
 
 body.page-template {
-
 }
 
 #forkme {
@@ -1133,7 +1147,8 @@ body.page-template {
 /* minimal responsive stuff by @@iolo */
 
 @media only screen and (min-width: 720px) {
-    .visible-sm, .hidden-lg {
+    .visible-sm,
+    .hidden-lg {
         display: none !important;
     }
 
@@ -1147,7 +1162,8 @@ body.page-template {
 }
 
 @media only screen and (max-width: 720px) {
-    .visible-lg, .hidden-sm {
+    .visible-lg,
+    .hidden-sm {
         display: none !important;
     }
 
@@ -1209,7 +1225,8 @@ body.page-template {
         border-bottom: none;
     }
 
-    #menu > li.active, #menu > li:hover {
+    #menu > li.active,
+    #menu > li:hover {
         border-bottom: none;
         background-color: #f4f4f4;
     }

@@ -13,9 +13,15 @@
     </div>
     <ul class="search__results" id="results-container"></ul>
 
-    <ul id="menu" class="nav" style="visibility: hidden;">
-        <li>&nbsp;
-            <a href="{{ base_path }}/"></a>
+    <ul id="menu" class="nav">
+        <li>
+            <a href="{{ base_path }}/menu01">대메뉴1</a>
+        </li>
+        <li>
+            <a href="{{ base_path }}/menu02">대메뉴2</a>
+        </li>
+        <li>
+            <a href="{{ base_path }}/menu3">대메뉴2</a>
         </li>
     </ul>
 </div>
@@ -24,14 +30,14 @@
 
 <script type="text/javascript">
     SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '{{ site.baseurl }}/search2.json',
+        searchInput: document.getElementById("search-input"),
+        resultsContainer: document.getElementById("results-container"),
+        json: "{{ site.baseurl }}/search2.json",
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: '<li>No results found</li>',
+        noResultsText: "<li>No results found</li>",
         limit: 15,
         fuzzy: false,
-        exclude: ['Welcome']
-    })
-</script><!-- #header -->
-
+        exclude: ["Welcome"],
+    });
+</script>
+<!-- #header -->
