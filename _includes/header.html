@@ -14,14 +14,14 @@
     <ul class="search__results" id="results-container"></ul>
 
     <ul id="menu" class="nav">
-        <li>
-            <a href="{{ base_path }}/menu01">대메뉴1</a>
+        <li class="{% if page.url != '/opensource/' and page.url != '/openapi/' %} active {% endif %}">
+            <a href="{{ base_path }}/">블로그</a>
         </li>
-        <li>
-            <a href="{{ base_path }}/menu02">대메뉴2</a>
+        <li class="{% if page.url == '/opensource/' %} active {% endif %}">
+            <a href="{{ base_path }}/opensource/">오픈소스</a>
         </li>
-        <li>
-            <a href="{{ base_path }}/menu3">대메뉴2</a>
+        <li class="{% if page.url == '/openapi/' %} active {% endif %}">
+            <a href="{{ base_path }}/openapi/">오픈API</a>
         </li>
     </ul>
 </div>
