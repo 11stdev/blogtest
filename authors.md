@@ -5,6 +5,7 @@ permalink: /authors/
 sitemap:
   priority: 0.7
 ---
-{% for author in site.authors %}
-* [{{ author.name }}]({{ site.baseurl }}{{ author.url }})
-{% endfor %}
+
+<div>
+  {% include authors.html %}
+</div>

@@ -1,0 +1,11 @@
+{% for author in site.authors %}
+    <div id="post-footer">
+        <a id="post-author" href="{{ site.baseurl }}{{ author.url }}">
+            <div id="author-image" {% if author.image %}style="background-image:url({{ author.image }});"{% endif %}>
+                <span class="sr-only">{{ author.title }}'s profile image</span>
+            </div>
+            <p id="author-name">{{ author.title }}</p>
+            <p style="position: absolute; right: 0px; top: 30px;">{{ author.description }}</p>
+        </a>
+    </div>
+{% endfor %}
