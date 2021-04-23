@@ -14,14 +14,14 @@
     <ul class="search__results" id="results-container"></ul>
 
     <ul id="menu" class="nav">
-        <li class="{% if page.url != '/opensource/' and page.url != '/openapi/' %} active {% endif %}">
+        <li class="{% if page.url == '/about/' %} active {% endif %}">
+            <a href="{{ base_path }}/about/">소개</a>
+        </li>
+        <li class="{% if page.url == '/' %} active {% endif %}">
             <a href="{{ base_path }}/">블로그</a>
         </li>
-        <li class="{% if page.url == '/opensource/' %} active {% endif %}">
-            <a href="{{ base_path }}/opensource/">오픈소스</a>
-        </li>
-        <li class="{% if page.url == '/openapi/' %} active {% endif %}">
-            <a href="{{ base_path }}/openapi/">오픈API</a>
+        <li class="{% if page.url == '/careers/' %} active {% endif %}">
+            <a href="{{ base_path }}/careers/">인재채용</a>
         </li>
     </ul>
 </div>
@@ -30,14 +30,14 @@
 
 <script type="text/javascript">
     SimpleJekyllSearch({
-        searchInput: document.getElementById("search-input"),
-        resultsContainer: document.getElementById("results-container"),
-        json: "{{ site.baseurl }}/search2.json",
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/search2.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: "<li>No results found</li>",
+        noResultsText: '<li>No results found</li>',
         limit: 15,
         fuzzy: false,
-        exclude: ["Welcome"],
-    });
-</script>
-<!-- #header -->
+        exclude: ['Welcome']
+    })
+</script><!-- #header -->
+
