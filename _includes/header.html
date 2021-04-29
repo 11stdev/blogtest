@@ -13,9 +13,15 @@
     </div>
     <ul class="search__results" id="results-container"></ul>
 
-    <ul id="menu" class="nav" style="visibility: hidden;">
-        <li>&nbsp;
-            <a href="{{ base_path }}/"></a>
+    <ul id="menu" class="nav">
+        <li class="{% if page.url == '/about/' %} active {% endif %}">
+            <a href="{{ base_path }}/about/">소개</a>
+        </li>
+        <li class="{% if page.url == '/' %} active {% endif %}">
+            <a href="{{ base_path }}/">블로그</a>
+        </li>
+        <li class="{% if page.url == '/careers/' %} active {% endif %}">
+            <a href="{{ base_path }}/careers/">인재채용</a>
         </li>
     </ul>
 </div>
